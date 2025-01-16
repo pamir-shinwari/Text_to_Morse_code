@@ -1,10 +1,10 @@
 
     text = document.querySelector("#text-area");
-    text.addEventListener("keyup", convert)
+    text.addEventListener("keyup", convert);
     function convert(){
         morse = document.querySelector("#morse-area");
 
-        let complete_morse_code = ''
+        let complete_morse_code = '';
 
 
         letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
@@ -26,8 +26,9 @@
 
             }
         }
-morse.innerHTML = complete_morse_code
+morse.innerHTML = complete_morse_code;
 
     }
 
+document.querySelector("#year").innerHTML = new Date().getFullYear();
 
